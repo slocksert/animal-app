@@ -41,6 +41,10 @@ function manipularFormulario(){
         
         carregarAnimais()
         alert(`${nome_animal} cadastrado`)
+        input_nome.value = ''
+        input_idade.value = ''
+        input_sexo.value = ''
+        input_cor.value = ''
     }
 }
 
