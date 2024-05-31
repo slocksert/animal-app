@@ -3,6 +3,7 @@ from pydantic import BaseModel
 from typing import List
 from uuid import uuid4
 from fastapi.middleware.cors import CORSMiddleware
+import uvicorn
 
 app = FastAPI()
 
@@ -48,3 +49,12 @@ async def delete_id(animal_id: str):
         if animal.id == animal_id:
             banco.remove(animal)
             return { "mensagem": f"{animal_id} foi removido!"}
+
+if __name__ == '__main__':    
+    uvicorn.run(
+        "server:app",
+        host='localhost',
+        port=8000,
+        reload=True,
+        server_header=0
+    )
