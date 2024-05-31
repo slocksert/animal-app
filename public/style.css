@@ -1,55 +1,65 @@
 @charset 'UTF-8';
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
+*{
+    padding: 0;
+    margin: 0;
+}
+
 
 body {
-    text-align: center;
-    font: normal 1em Roboto;
     background-color: #22223B;
 }
 
 ul {
-    margin-right: 50px;
     list-style-type: none;
 }
 
-input#submit {
-    margin-top: 10px;
-}
 
 img {
     border-radius: 5px;
+    margin: 1rem;
 }
 
 main {
+    display: flex;
+    flex-direction: column;
     margin: auto;
     width: max-content;
     background-color: white;
-    border-radius: 5px;
-    padding-top: 1px;
-    padding-left: 125px;
-    padding-right: 125px;
-    padding-bottom: 50px;
+    border-radius: 5px;align-self: center;
+    font: normal 1em Roboto;
+    padding: 3rem;
 }
 
 h2 {
-    margin-left: 100px;
-    margin-right: 100px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     background-color: #F2E9E4;
+    border-radius: 0.5rem;
 }
 
 h1 {
     background-color: #C9ADA7;
+    border-radius: 0.5rem;
 }
 
-input#idade {
-    margin-left: 1.9px;
+form li{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.5rem 10rem 0.5rem 10rem;
 }
 
-input#sexo {
-    margin-left: 6px;
+input{
+    border-radius: 0.2rem;
+    border: 0.1rem black solid;
 }
 
-input#cor {
-    margin-left: 17px;
+li{
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
